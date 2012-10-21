@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <!-- Parent ContentType: Item (0x01) -->
+  <ContentType ID="0x0100C6816D7DA76242B4B33DD2F036C2876E" Name="RegistrazioneAttivitaCT" Group="Commessa App Content Types" Description="My Content Type" Inherits="TRUE" Version="0">
+    <FieldRefs>
+      <FieldRef ID="{D65FF946-6F70-496A-B75D-ED8552A97137}" DisplayName="Commessa" Required="FALSE" Name="Commessa" />
+      <FieldRef ID="{C692DA03-0066-44D5-997E-21303B84B29B}" DisplayName="DataInizio" Required="FALSE" Name="DataInizio" />
+      <FieldRef ID="{F7813004-D303-46DE-AE1E-5F5881AA3A2D}" DisplayName="DataFine" Required="FALSE" Name="DataFine" />
+    </FieldRefs>
+  </ContentType>
+</Elements>

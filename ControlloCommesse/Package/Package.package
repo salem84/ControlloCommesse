@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="06988c82-d62e-4ec1-a019-7bdbf8411c31" solutionId="06988c82-d62e-4ec1-a019-7bdbf8411c31" resetWebServer="false" name="ControlloCommesse" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="2e409402-f863-4e6b-82ba-c69404e5dcee" />
+  </features>
+</package>

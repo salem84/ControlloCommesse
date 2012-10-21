@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <!-- Parent ContentType: Item (0x01) -->
+  <ContentType ID="0x01005D9CAC96D1664738AF4A6BF299006FB1" Name="CommessaCT" Group="Commessa App Content Types" Description="My Content Type" Inherits="TRUE" Version="0">
+    <FieldRefs>
+      <FieldRef ID="{ef736e69-45f0-4ef0-9ae3-d3af637daeb1}" DisplayName="Visualizzabile" Required="FALSE" Name="Visualizzabile" />
+      <FieldRef ID="{C7EEF282-1C46-4E56-B842-7619FAD1AEFE}" DisplayName="Cliente" Required="FALSE" Name="Cliente" />
+      <FieldRef ID="{9D7158D4-5A47-4762-B38F-2068F95E63B7}" DisplayName="Colore" Required="FALSE" Name="Colore" />
+    </FieldRefs>
+  </ContentType>
+</Elements>

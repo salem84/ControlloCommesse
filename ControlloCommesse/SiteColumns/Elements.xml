@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{ef736e69-45f0-4ef0-9ae3-d3af637daeb1}"
+       Name="Visualizzabile"
+       DisplayName="Visualizzabile"
+       Type="Boolean"
+       Required="FALSE"
+       Group="Commessa App Columns">
+  </Field>
+  <Field
+       ID="{C7EEF282-1C46-4E56-B842-7619FAD1AEFE}"
+       Name="Cliente"
+       DisplayName="Cliente"
+       Type="Text"
+       Required="FALSE"
+       Group="Commessa App Columns">
+  </Field>
+  <Field
+       ID="{9D7158D4-5A47-4762-B38F-2068F95E63B7}"
+       Name="Colore"
+       DisplayName="Colore"
+       Type="Text"
+       Required="FALSE"
+       Group="Commessa App Columns">
+  </Field>
+  <Field
+       ID="{D65FF946-6F70-496A-B75D-ED8552A97137}"
+       Name="Commessa"
+       DisplayName="Commessa"
+       Type="Text"
+       Required="FALSE"
+       Group="Commessa App Columns">
+  </Field>
+  <Field
+       ID="{C692DA03-0066-44D5-997E-21303B84B29B}"
+       Name="DataInizio"
+       DisplayName="DataInizio"
+       Type="DateTime"
+       Required="FALSE"
+       Group="Commessa App Columns">
+  </Field>
+  <Field
+      ID="{F7813004-D303-46DE-AE1E-5F5881AA3A2D}"
+      Name="DataFine"
+      DisplayName="DataFine"
+      Type="DateTime"
+      Required="FALSE"
+      Group="Commessa App Columns">
+  </Field>
+</Elements>

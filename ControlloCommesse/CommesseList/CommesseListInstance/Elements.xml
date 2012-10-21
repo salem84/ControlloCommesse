@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ListInstance Title="Commesse" OnQuickLaunch="TRUE" TemplateType="10000" Url="Lists/Commesse" Description="My List Instance">
+    <Data>
+      <Rows>
+        <Row>
+          <Field Name="Title">Libano</Field>
+          <Field Name="Cliente">Eng</Field>
+          <Field Name="Visualizzabile">True</Field>
+          <Field Name="Colore">Green</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">SADEM</Field>
+          <Field Name="Cliente">Reply</Field>
+          <Field Name="Visualizzabile">True</Field>
+          <Field Name="Colore">Red</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Trenord</Field>
+          <Field Name="Cliente">Reply</Field>
+          <Field Name="Visualizzabile">True</Field>
+          <Field Name="Colore">Orange</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">PUU</Field>
+          <Field Name="Cliente">Urbaniana</Field>
+          <Field Name="Visualizzabile">True</Field>
+          <Field Name="Colore">Purple</Field>
+        </Row>
+      </Rows>
+    </Data>
+    
+  </ListInstance>
+</Elements>

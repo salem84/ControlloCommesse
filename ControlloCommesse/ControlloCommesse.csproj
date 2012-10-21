@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5D3F5CB1-8F78-4DD4-93A5-663081B29FB7}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ControlloCommesse</RootNamespace>
+    <AssemblyName>ControlloCommesse</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetOfficeVersion>15.0</TargetOfficeVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{BB1F664B-9266-4fd6-B973-E1E44974B511};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <IncludeAssemblyInPackage>False</IncludeAssemblyInPackage>
+    <ProjectMode>SharePointApp</ProjectMode>
+    <AppFeaturePartId>{ee873fbd-cfcb-412f-bf11-f1ee6bef5ad3}</AppFeaturePartId>
+    <WspPartId>{867dc51a-ad51-45fd-85ee-89b938ffc0cf}</WspPartId>
+    <CspkgPartId>{9469cbac-7449-4028-8804-d05d295b4dbc}</CspkgPartId>
+    <SqlPackagePartId>{3bcaea4f-c3f8-4252-ba5e-89f2d5cdca5e}</SqlPackagePartId>
+    <ActiveDeploymentConfiguration>Deploy App for SharePoint</ActiveDeploymentConfiguration>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="AppIcon.png">
+      <OpcRelationship>manifest-icon</OpcRelationship>
+    </Content>
+    <Content Include="CommessaCT\Elements.xml" />
+    <Content Include="CommesseList\CommesseListInstance\Elements.xml" />
+    <Content Include="CommesseList\Elements.xml" />
+    <Content Include="CommesseList\Schema.xml" />
+    <Content Include="Features\ControlloCommesseFeature\ControlloCommesseFeature.Template.xml">
+      <DependentUpon>ControlloCommesseFeature.feature</DependentUpon>
+    </Content>
+    <Content Include="RegistrazioneAttivitaList\Elements.xml" />
+    <Content Include="RegistrazioneAttivitaList\RegistrazioneAttivitaListInstance\Elements.xml" />
+    <Content Include="RegistrazioneAttivitaList\Schema.xml" />
+    <Content Include="Package\Package.Template.xml">
+      <DependentUpon>Package.package</DependentUpon>
+    </Content>
+    <Content Include="RegistrazioneAttivitaCT\Elements.xml" />
+    <Content Include="SiteColumns\Elements.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppManifestFile Include="AppManifest.xml">
+      <SubType>Designer</SubType>
+    </AppManifestFile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ControlloCommesseWeb\ControlloCommesseWeb.csproj">
+      <Project>{EFF995DC-513B-42F9-86E7-CD8FBE187209}</Project>
+      <Name>ControlloCommesseWeb</Name>
+      <Private>True</Private>
+      <RoleType>Web</RoleType>
+      <RoleName>ControlloCommesseWeb</RoleName>
+      <ReferenceOutputAssembly>False</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CommessaCT\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{ce0cc22d-a385-45b2-aed6-b99b79f9cce5}</SharePointProjectItemId>
+    </None>
+    <None Include="CommesseList\CommesseListInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{c741ee42-6612-42b9-a7f6-507e26a53ccf}</SharePointProjectItemId>
+    </None>
+    <None Include="CommesseList\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{61ac53cc-b6dc-413d-a9e5-58fd8e833224}</SharePointProjectItemId>
+    </None>
+    <None Include="Features\ControlloCommesseFeature\ControlloCommesseFeature.feature">
+      <FeatureId>{2e409402-f863-4e6b-82ba-c69404e5dcee}</FeatureId>
+    </None>
+    <None Include="RegistrazioneAttivitaList\RegistrazioneAttivitaListInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{c486f890-f257-40f9-a6d1-32e9b48ee6a3}</SharePointProjectItemId>
+    </None>
+    <None Include="RegistrazioneAttivitaList\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{69182a01-e49a-4fed-b9e3-fa68f40383f7}</SharePointProjectItemId>
+    </None>
+    <None Include="Package\Package.package">
+      <PackageId>{a256a643-fe0b-45bb-8854-cc641ec55aae}</PackageId>
+    </None>
+    <None Include="RegistrazioneAttivitaCT\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{4fb32515-72cb-4fc0-8408-415111f3530d}</SharePointProjectItemId>
+    </None>
+    <None Include="SiteColumns\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{2a47e79b-c4a5-4457-8ec6-3e33d685bfef}</SharePointProjectItemId>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\SharePointTools\Microsoft.VisualStudio.SharePoint.targets" Condition="'$(VSToolsPath)' != ''" />
+</Project>
